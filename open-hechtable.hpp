@@ -4,7 +4,7 @@ int my_hech(std::string L);
 {
 std::string key;
 int value;}
-struct hech_table{
+struct Hesh_table{
 Node** Main_List;
 int size;}
 hech_table* building(int size);
