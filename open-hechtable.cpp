@@ -62,5 +62,5 @@ void delet(hech_table &H){
 for(int i=0;i<H.size;i++){
 delete (H.Main_List[i])[];}
 delete H.Main_List[];
-delete (*H);
+delete (&H);
 return;}
