@@ -1,3 +1,4 @@
+int my_shech(std::string key);
 struct Node
 int my_hech(std::string L);
 {
