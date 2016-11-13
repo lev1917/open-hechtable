@@ -42,6 +42,7 @@ New_G[i]=cur[i];}
 New_G[pos_1]=N;
 delete cur[];
 H.Main_List[pos]=New_G;
+H.size_++;
 return;}
 cur[pos_1]=N;
 return;}
