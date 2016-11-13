@@ -13,23 +13,36 @@ for(i=0;i<size;i++){
 hash_tab[i]=NULL;}
 Hesh_table*H=new Hesh_table;
 H->size=size;
+H->size_=0;
 H->Main_List=hash_tab;
 return H;}
 void add(hech_table &H,const Node &N){
 int pos=std::fmod(my_hesh(Node.key)/H.size);
 Node* cur=H.Mai_List[pos];
 if(cur==NULL){
-Node*G=new Node[H.size/2];
-for(int i=0;i<H.size/2;i++)}{
+Node*G=new Node[H.size/2+1];
+for(int i=0;i<(H.size/2+1);i++){
 Node J;
 J.key=std::string()"";
 G[i]=J;}
 H.Main_List[pos]=G;
-cur=G;}
+cur=G;
+H.size_=H.size/2+1;}
 int pos_1=0;
 std::string cur_key=cur[pos_1];
 while(cur[pos_1]!=std::string()""){
 pos_1++;}
+if((H.size_-pos_1)==0){
+Node*New_G=Node[pos_1+1];
+Node NEW;
+NEW.key=std::string()"";
+New_G[pos_1+1]=NEW;
+for(int i=0;i<pos_1;i++){
+New_G[i]=cur[i];}
+New_G[pos_1]=N;
+delete cur[];
+H.Main_List[pos]=New_G;
+return;}
 cur[pos_1]=N;
 return;}
 Node find(hec_table &H, std::string L){
@@ -37,7 +50,7 @@ int pos=std::fmod(my_hesh(L)/H.size);
 Node*cur=H.Main_List[pos];
 int pos_1=0;
 Node F=cur[pos_1];
-while(cur[pos_1].key!=std::string()""){
+while(cur[pos_1].key!=std::string()""){  
 if(cur[pos_1]==L){
 return cur[pos_1]}
 pos++;}
